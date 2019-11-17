@@ -1,0 +1,76 @@
+// gray dark
+$gray-dark-10: #70747D;
+$gray-dark-20: #52565E;
+$gray-dark-30: #35383E;
+$gray-dark-40: #171A1D;
+$gray-dark-50: #111721;
+
+// gray light
+$gray-light-10: #FCFCFD;
+$gray-light-20: #F7F7FA;
+$gray-light-30: #E4E5EA;
+$gray-light-40: #BEC2D0;
+$gray-light-50: #9095B1;
+
+// blue dark
+$blue-dark-10: #536082;
+$blue-dark-20: #384568;
+$blue-dark-30: #243154;
+$blue-dark-40: #142040;
+$blue-dark-50: #061027;
+
+// blue light
+$blue-light-10: #B3CAFC;
+$blue-light-20: #83A9FA;
+$blue-light-30: #5C8DF7;
+$blue-light-40: #3773F2;
+$blue-light-50: #1357E6;
+
+// red
+$red-10: #F46F7B;
+$red-20: #D74150;
+$red-30: #BE1E2D;
+$red-40: #9B0A19;
+$red-50: #74000B;
+
+// green
+$green-10: #C4FCE9;
+$green-20: #8BF5D2;
+$green-30: #5FECBE;
+$green-40: #3AE0AB;
+$green-50: #16CE92;
+
+// orange
+$orange-10: #FFDBB2;
+$orange-20: #FFC787;
+$orange-30: #FFB763;
+$orange-40: #E5973D;
+$orange-50: #C17319;
+
+// yellow
+$yellow-10: #FFFFC1;
+$yellow-20: #FFFE9A;
+$yellow-30: #F9F871;
+$yellow-40: #D8D746;
+$yellow-50: #B6B524;
+
+// pink
+$pink-10: #FFF8FC;
+$pink-20: #FFE6F4;
+$pink-30: #FEABDA;
+$pink-40: #FC7DC4;
+$pink-50: #F654AF;
+
+// primary brand colors
+$primary-blue: $blue-dark-30;
+$primary-red: $red-30;
+$primary-gray-dark: $gray-dark-30;
+$primary-gray-light: $gray-light-30;
+$text-color: $primary-gray-dark;
+$text-color-alt: $gray-light-10;
+$background-color: $gray-light-10;
+$background-color-alt: $primary-blue;
+
+:root {
+  --focus-color: #{$primary-red};
+}

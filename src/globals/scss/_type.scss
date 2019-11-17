@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:300,300i,400,400i,600,600i&display=swap');
+
+$font-family: 'Fira Sans', Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-bold: 600;
+
+$type-sets: (
+  xsm: (
+    line-height: rem(10px),
+    font-size: rem(8px)
+  ),
+  sm: (
+    line-height: rem(15px),
+    font-size: rem(11.32px)
+  ),
+  p: (
+    line-height: rem(20px),
+    font-size: rem(16px)
+  ),
+  h5: (
+    line-height: rem(30px),
+    font-size: rem(22.62px)
+  ),
+  h4: (
+    line-height: rem(40px),
+    font-size: rem(31.99px)
+  ),
+  h3: (
+    line-height: rem(60px),
+    font-size: rem(45.23px)
+  ),
+  h2: (
+    line-height: rem(80px),
+    font-size: rem(63.96px)
+  ),
+  h1: (
+    line-height: rem(115px),
+    font-size: rem(90.44px)
+  )
+);
+
+@mixin set-type ($type-style, $font-weight: 400) {
+  $type-set: map-get($type-sets, $type-style);
+
+  @each $prop, $value in $type-set {
+    #{$prop}: $value;
+  }
+
+  font-weight: $font-weight;
+}
+
+@function get-type-padding ($type-style, $height) {
+  @return ($height - map-get(map-get($type-sets, $type-style), 'line-height')) / 2;
+}

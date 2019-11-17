@@ -1,0 +1,72 @@
+@import '../../globals/scss/colors';
+@import '../../globals/scss/grid';
+@import '../../globals/scss/type';
+@import '../../globals/scss/spacing';
+
+.ams-btn {
+  $type: 'p';
+  $height: spacer(8);
+  $padding: get-type-padding($type, $height);
+
+  cursor: pointer;
+  border: 0;
+  margin: 0 $height * .45 / 2;
+  outline: none;
+  display: inline-block;
+  text-decoration: none;
+  box-sizing: border-box;
+  position: relative;
+  background-color: $primary-red;
+  color: $text-color-alt;
+  padding: $padding;
+  padding-right: $height * 2;
+  transition: all .2s ease-in-out;
+  max-width: $height * 6;
+  text-align: left;
+
+  @include set-type($type);
+  font-family: $font-family;
+
+  &::before {
+      @include create-pipe-end($primary-red, 'left', $height * .45);
+      transition: all .2s ease-in-out;
+  }
+
+  &::after {
+      @include create-pipe-end($primary-red, 'right', $height * .45);
+      transition: all .2s ease-in-out;
+  }
+
+  &:active,
+  &:hover {
+    background-color: $red-40;
+
+    &::before {
+      background-color: $red-40;
+    }
+
+    &::after {
+      background-color: $red-40;
+    }
+  }
+
+  &:active,
+  &:focus {
+    box-shadow: inset 0 3px 0 0 $primary-red,
+                inset 0 -3px 0 0 $primary-red,
+                inset 0 4px 0 0 $background-color,
+                inset 0 -4px 0 0 $background-color;
+
+    &::before {
+      box-shadow: inset 0 0 0 3px $primary-red,
+                  inset 0 0 0 4px $background-color;
+    }
+
+    &::after {
+      box-shadow: inset 0 0 0 3px $primary-red,
+                  inset 0 0 0 4px $background-color;
+    }
+  }
+
+  // &::disabled
+}

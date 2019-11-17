@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:300,300i,400,400i,600,600i&display=swap');
+
+@import '../../globals/scss/colors';
+@import '../../globals/scss/mixins';
+@import '../../globals/scss/type';
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  font-family: $font-family;
+  font-size: $type-base-size;
+  color: $text-color;
+  background: $background-color;
+  @include set-type('p');
+}
+
+#___gatsby,
+#gatsby-focus-wrapper,
+.ams {
+  height: 100%;
+}
+
+.ams {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+
+  &-header {
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  &-footer {
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+}

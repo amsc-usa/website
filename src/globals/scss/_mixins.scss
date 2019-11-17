@@ -1,0 +1,30 @@
+$type-base-size: 16px;
+
+@mixin clearfix () {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin create-pipe-end ($color, $side: 'right', $width: 20%) {
+  content: '';
+  height: 100%;
+  position: absolute;
+  width: $width;
+  top: 0;
+  border-radius: 50%;
+  background: $color;
+  z-index: -1;
+
+  @if ($side == 'left') {
+    left: -.5 * $width;
+  } @else {
+    right: -.5 * $width;
+  }
+}
+
+@function rem($px) {
+  @return 1rem * $px / $type-base-size;
+}

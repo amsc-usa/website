@@ -1,0 +1,5 @@
+@import './mixins';
+
+@function spacer($size) {
+  @return rem($size * 5px);
+}

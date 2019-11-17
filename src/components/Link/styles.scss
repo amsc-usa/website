@@ -1,0 +1,27 @@
+@import '../../globals/scss/colors';
+@import '../../globals/scss/grid';
+@import '../../globals/scss/type';
+@import '../../globals/scss/spacing';
+
+.ams-link {
+  color: $primary-red;
+  text-decoration: none;
+  box-shadow: 0 1px 0 $primary-red;
+  transition: all .2s ease-in-out;
+  outline: none;
+  outline-style: solid;
+  outline-width: 0;
+  outline-color: transparent;
+
+  &:focus {
+    outline-width: 1px;
+    outline-color: $primary-red;
+  }
+
+  &:hover {
+    $hover-color: $red-40;
+    color: $hover-color;
+    box-shadow: 0 2px 0 $hover-color;
+    outline-color: $hover-color;
+  }
+}
