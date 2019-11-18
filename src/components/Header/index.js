@@ -9,9 +9,9 @@ import { data } from "../../globals/data/navigation";
 import './styles.scss';
 
 const Header = ({ siteTitle }) => (
-  <header>
+  <header className="ams-header">
     <Logo />
-    <nav>
+    {/*<nav>
       <Button href="https://asdf/">Find products</Button>
       <ul>
         {data.map(({ href, text }, i) => {
@@ -22,7 +22,7 @@ const Header = ({ siteTitle }) => (
           );
         })}
       </ul>
-    </nav>
+    </nav> */}
   </header>
 );
 

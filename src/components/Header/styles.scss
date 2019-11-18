@@ -1,7 +1,21 @@
-header {
-  display: grid;
+@import '../../globals/scss/colors';
+@import '../../globals/scss/grid';
+@import '../../globals/scss/type';
+@import '../../globals/scss/spacing';
 
-  .ams-logo svg {
-    width: 200px;
+.ams-header {
+
+  @include grid-container;
+  background: #f5f5f5;
+
+  .ams-btn,
+  .ams-link {
+    display: none;
+  }
+
+
+
+  .ams-logo {
+    @include grid-col(1, 12);
   }
 }
