@@ -4,24 +4,23 @@
 @import '../../globals/scss/spacing';
 
 .ams-link {
-  color: $primary-red;
-  text-decoration: none;
-  box-shadow: 0 1px 0 $primary-red;
-  transition: all .2s ease-in-out;
-  outline: none;
-  outline-style: solid;
-  outline-width: 0;
-  outline-color: transparent;
+  & {
+    color: var(--link-color);
+    text-decoration: none;
+    box-shadow: 0 1px 0 var(--link-color);
+    transition: all .2s ease-in-out;
+    outline: none;
+    outline-style: solid;
+    outline-width: 0;
+    outline-color: transparent;
+  }
 
   &:focus {
     outline-width: 1px;
-    outline-color: $primary-red;
+    outline-color: var(--link-color);
   }
 
   &:hover {
-    $hover-color: $red-40;
-    color: $hover-color;
-    box-shadow: 0 2px 0 $hover-color;
-    outline-color: $hover-color;
+    --link-color: var(--hover-color);
   }
 }

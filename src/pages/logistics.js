@@ -6,7 +6,7 @@ import SEO from "../components/seo"
 
 const SecondPage = () => (
   <Pageshell>
-    <SEO title="Page two" />
+    <SEO title="Logistics" />
     <h1>Logistics</h1>
     <Link to="/">Go back to the homepage</Link>
   </Pageshell>

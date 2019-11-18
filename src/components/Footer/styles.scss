@@ -4,7 +4,12 @@
 @import '../../globals/scss/spacing';
 
 .ams-footer {
-  background: linear-gradient(90deg, $background-color-alt 25%, transparent 25%);
+  --link-color: #{$text-color-alt};
+  --focus-color: var(--link-color);
+  --hover-color: #{$gray-light-30};
+  --background-color: #{$background-color-alt};
+  background: linear-gradient(90deg, var(--background-color) 25%, transparent 25%);
+
 
   h1 {
     @include set-type('h5');
@@ -23,34 +28,56 @@
 
   &__container {
     @include grid-container;
+    display: flex;
   }
 
   &__big-blue {
     @include grid-col(5);
     padding-top: spacer(4);
     padding-bottom: spacer(4);
-    background: $background-color-alt;
+    background: var(--background-color);
     position: relative;
     color: $text-color-alt;
 
     &::after {
-      @include create-pipe-end($background-color-alt);
+      @include create-pipe-end(var(--background-color));
+    }
+  }
+
+  &__navigation {
+    --link-color: #{$primary-blue};
+    --focus-color: var(--link-color);
+    --hover-color: #{$blue-dark-10};
+
+    @include grid-col(7);
+    @include grid-offset-col(1);
+
+    float: left;
+    display: flex;
+    flex-direction: column;
+    padding-top: spacer(4);
+    padding-bottom: spacer(4);
+
+    ul {
+      padding: 0;
+      list-style-type: none;
+      margin: 0;
+      margin-top: auto;
+
+      & > li {
+        float: left;
+        margin-right: spacer(2);
+        margin-right: $gutter;
+        padding: 0;
+      }
     }
   }
 
   .ams-logo {
-    @include grid-col(1, 6);
-    display: block;
-    float: initial;
-
-    margin-bottom: spacer(2);
+    @include grid-col(1, 4, false, false);
 
     path {
-      fill: $text-color-alt;
-    }
-
-    &:focus {
-      --focus-color: #{$text-color-alt};
+      fill: var(--link-color);
     }
   }
 }

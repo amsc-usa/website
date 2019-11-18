@@ -1,11 +1,15 @@
 @import '../../globals/scss/colors';
 
 .ams-logo {
+  $padding: 8px;
   outline: none;
+  margin-left: -$padding;
+  padding: 8px;
+  display: block;
 
   svg {
     fill: $primary-blue;
-    padding: 8px;
+    display: block;
   }
 
   &--highlight {
