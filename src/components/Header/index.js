@@ -27,8 +27,8 @@ const Header = ({ siteTitle }) => {
       <Logo />
       <MainNav style={mobileHeight} />
       <div className="ams-header__cta">
-        <Button href="tel:123-123-1234">
-          123-123-1234
+        <Button href="tel:770-986-0620">
+          770-986-0620
           <i class="fas fa-phone-alt"></i>
         </Button>
       </div>

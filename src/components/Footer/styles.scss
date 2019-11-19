@@ -8,7 +8,12 @@
   --focus-color: var(--link-color);
   --hover-color: #{$gray-light-30};
   --background-color: #{$background-color-alt};
-  background: linear-gradient(90deg, var(--background-color) 25%, transparent 25%);
+
+  background: var(--background-color);
+
+  @include breakpoint(750px) {
+    background: linear-gradient(90deg, var(--background-color) 25%, transparent 25%);
+  }
 
   h1 {
     @include set-type('h5');
@@ -28,52 +33,135 @@
   &__container {
     @include grid-container;
     display: flex;
+    flex-wrap: wrap;
   }
 
   &__big-blue {
-    @include grid-col(5);
+    @include grid-col(1, 1);
     padding-top: spacer(4);
     padding-bottom: spacer(4);
     background: var(--background-color);
     position: relative;
     color: $text-color-alt;
 
-    &::after {
-      @include create-pipe-end(var(--background-color));
+    @include breakpoint(750px) {
+        @include grid-col(3, 6);
+
+        &::after {
+          @include create-pipe-end(var(--background-color));
+        }
+    }
+
+    @include breakpoint(1000px) {
+        @include grid-col(3, 8);
+    }
+
+    @include breakpoint(1250px) {
+        @include grid-col(5, 12);
     }
   }
 
   .ams-main-nav {
-    --link-color: #{$primary-blue};
-    --focus-color: var(--link-color);
-    --hover-color: #{$blue-dark-10};
 
-    @include grid-col(7);
-    @include grid-offset-col(1);
-
+    @include grid-col(1, 1);
+    position: relative;
     float: left;
     display: flex;
     flex-direction: column;
     padding-top: spacer(4);
     padding-bottom: spacer(4);
+    border-top: 1px solid $blue-dark-20;
+
+
+    @include breakpoint(750px) {
+      @include grid-col(2, 6);
+      @include grid-offset-col(1, 6);
+      border-top: 0;
+    }
+
+    @include breakpoint(1000px) {
+      @include grid-col(4, 8);
+      @include grid-offset-col(1, 8);
+    }
+
+    @include breakpoint(1250px) {
+      @include grid-col(6, 12);
+      @include grid-offset-col(1, 12);
+    }
 
     ul {
       padding: 0;
       list-style-type: none;
       margin: 0;
       margin-top: auto;
+      margin-left: -10px;
+      margin-right: -10px;
+
+      @include breakpoint(750px) {
+        margin-left: 0;
+        margin-right: 0;
+      }
 
       & > li {
         float: left;
-        margin-right: spacer(2);
-        margin-right: $gutter;
         padding: 0;
+
+        @include breakpoint(1250px) {
+          margin-right: $gutter;
+        }
+      }
+    }
+
+    a,
+    button {
+      &:hover {
+        --background-color: #{$blue-dark-20};
+      }
+
+      &:focus {
+        --background-color: #{$text-color-alt};
+      }
+
+      &:active {
+        --background-color: #{$blue-dark-10};
+      }
+
+      @include breakpoint(750px) {
+        --link-color: #{$primary-blue};
+        --focus-color: var(--link-color);
+        --hover-color: #{$blue-dark-10};
+
+        &:hover {
+          --background-color: #{$gray-light-20};
+        }
+
+        &:focus {
+          --background-color: #{$gray-light-40};
+        }
+
+        &:active {
+          --background-color: #{$gray-light-30};
+        }
       }
     }
   }
 
   .ams-logo {
-    @include grid-col(1, 5, false, false);
+    @include grid-col(1, 4, false, false);
+    margin-right: 8px;
+
+
+    @include breakpoint(750px) {
+        @include grid-col(2, 5, false, false);
+    }
+
+    @include breakpoint(1000px) {
+        @include grid-col(1, 3, false, false);
+    }
+
+    @include breakpoint(1250px) {
+        @include grid-col(1, 5, false, false);
+    }
 
     path {
       fill: var(--link-color);

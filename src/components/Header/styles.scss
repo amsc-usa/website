@@ -23,6 +23,7 @@ body.ams-main-nav--mobile-open {
   }
 
   .ams-main-nav {
+
     display: none;
     @include grid-col(1, 1);
 
@@ -41,6 +42,25 @@ body.ams-main-nav--mobile-open {
         @include grid-col(9, 12);
     }
 
+    a,
+    button {
+        --link-color: #{$primary-blue};
+        --focus-color: var(--link-color);
+        --hover-color: #{$blue-dark-10};
+
+        &:hover {
+          --background-color: #{$gray-light-20};
+        }
+
+        &:focus {
+          --background-color: #{$gray-light-40};
+        }
+
+        &:active {
+          --background-color: #{$gray-light-30};
+        }
+    }
+
     .ams-main-nav--mobile-open & {
       display: block;
       position: absolute;
@@ -55,7 +75,8 @@ body.ams-main-nav--mobile-open {
         display: block;
       }
 
-      a {
+      a,
+      button {
         padding-top: 10px;
         padding-bottom: 10px;
       }
