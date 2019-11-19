@@ -38,15 +38,21 @@
   box-sizing: border-box;
   position: relative;
 
+  i {
+    position: absolute;
+    right: $height * .45 / 2;
+    font-size: 1.2rem;
+  }
+
   @include set-type($type);
   font-family: $font-family;
 
   & > span {
     display: block;
-    max-width: $height * 6;
+    // max-width: $height * 6;
     text-align: left;
     padding: $padding;
-    padding-right: $height * 2;
+    // padding-right: $height * 2;
     background-color: var(--link-color);
     color: var(--background-color);
     z-index: 1;

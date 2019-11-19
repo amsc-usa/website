@@ -4,6 +4,14 @@
 @import '../../globals/scss/mixins';
 @import '../../globals/scss/type';
 
+:root {
+  --link-color: #{$primary-red};
+  --focus-color: var(--link-color);
+  --hover-color: #{$red-40};
+  --background-color: #{$background-color};
+  --border-radius: 4px;
+}
+
 html,
 body {
   padding: 0;

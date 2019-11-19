@@ -1,6 +1,7 @@
 import React from "react";
 import Logo from "../Logo";
 import Link from "../Link";
+import MainNav from "../MainNav";
 
 import { data } from "../../globals/data/navigation";
 
@@ -23,17 +24,7 @@ const Footer = ({ siteTitle }) => (
           <p>© 2019 All rights reserved </p>
         </address>
       </div>
-      <nav className="ams-footer__navigation">
-        <ul>
-          {data.map(({ href, text }, i) => {
-            return (
-              <li key={i}>
-                <Link href={href}>{text}</Link>
-              </li>
-            );
-          })}
-        </ul>
-      </nav>
+      <MainNav />
     </div>
   </footer>
 );

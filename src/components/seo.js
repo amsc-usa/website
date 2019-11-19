@@ -70,7 +70,9 @@ function SEO({ description, lang, meta, title }) {
         //   content: metaDescription,
         // },
       ].concat(meta)}
-    />
+    >
+    <script src="https://kit.fontawesome.com/292dfe8e67.js" crossorigin="anonymous"></script>
+    </Helmet>
   )
 }
 

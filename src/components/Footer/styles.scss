@@ -10,7 +10,6 @@
   --background-color: #{$background-color-alt};
   background: linear-gradient(90deg, var(--background-color) 25%, transparent 25%);
 
-
   h1 {
     @include set-type('h5');
     margin-bottom: spacer(4);
@@ -44,7 +43,7 @@
     }
   }
 
-  &__navigation {
+  .ams-main-nav {
     --link-color: #{$primary-blue};
     --focus-color: var(--link-color);
     --hover-color: #{$blue-dark-10};
@@ -74,7 +73,7 @@
   }
 
   .ams-logo {
-    @include grid-col(1, 4, false, false);
+    @include grid-col(1, 5, false, false);
 
     path {
       fill: var(--link-color);

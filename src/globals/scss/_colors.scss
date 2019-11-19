@@ -70,10 +70,3 @@ $text-color: $primary-gray-dark;
 $text-color-alt: $gray-light-10;
 $background-color: $gray-light-10;
 $background-color-alt: $primary-blue;
-
-:root {
-  --link-color: #{$primary-red};
-  --focus-color: var(--link-color);
-  --hover-color: #{$red-40};
-  --background-color: #{$background-color};
-}
