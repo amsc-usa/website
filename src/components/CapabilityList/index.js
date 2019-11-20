@@ -10,8 +10,6 @@ const CapabilityList = ({ title, data, current }) => {
       prepRecommendList(dataKeyList, current, 4);
   }
 
-  console.log(title);
-
   return (
     <section className='ams-capability-list'>
       <h1 className='ams-capability-list__title'>{title}</h1>
