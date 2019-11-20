@@ -13,8 +13,13 @@ $max-width: 1580px;
   @include clearfix;
 }
 
-@mixin grid-offset-col ($span, $columns: $columns) {
-  margin-left: $span * 100% / $columns;
+@mixin grid-offset-col ($span, $columns: $columns, $reverse: false) {
+  @if ($reverse) {
+    margin-right: $span * 100% / $columns;
+  }
+  @else {
+    margin-left: $span * 100% / $columns;
+  }
 }
 
 @mixin grid-col ($span, $columns: $columns, $padding: true, $float: true) {

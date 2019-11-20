@@ -25,6 +25,7 @@ body {
   color: $text-color;
   background: $background-color;
   @include set-type('p');
+  line-height: 30px;
 }
 
 #___gatsby,

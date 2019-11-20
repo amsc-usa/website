@@ -29,7 +29,7 @@ const Header = ({ siteTitle }) => {
       <div className="ams-header__cta">
         <Button href="tel:770-986-0620">
           770-986-0620
-          <i class="fas fa-phone-alt"></i>
+          <i className="fas fa-phone-alt"></i>
         </Button>
       </div>
       <div className="ams-header__hamburger">

@@ -1,15 +1,22 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from 'react'
+import Capability from '../components/Capability';
+import CapabilityList from '../components/CapabilityList';
 
-import Pageshell from "../components/Pageshell"
-import SEO from "../components/seo"
+import { data } from '../globals/data/capabilities';
 
-const SecondPage = () => (
+import Pageshell from '../components/Pageshell'
+import SEO from '../components/seo';
+
+const Assembly = () => (
   <Pageshell>
-    <SEO title="Assembly" />
-    <h1>Assembly</h1>
-    <Link to="/">Go back to the homepage</Link>
+    <SEO title='Assembly' />
+    <Capability data={data.assembly} />
+    <CapabilityList
+      title="See more of our capabilities"
+      data={data}
+      current={'assembly'}
+    />
   </Pageshell>
-)
+);
 
-export default SecondPage
+export default Assembly

@@ -1,15 +1,22 @@
 import React from "react"
-import { Link } from "gatsby"
+import Capability from "../components/Capability";
+import CapabilityList from "../components/CapabilityList";
+
+import { data } from "../globals/data/capabilities";
 
 import Pageshell from "../components/Pageshell"
 import SEO from "../components/seo"
 
-const SecondPage = () => (
+const Engineering = () => (
   <Pageshell>
     <SEO title="Engineering" />
-    <h1>Engineering</h1>
-    <Link to="/">Go back to the homepage</Link>
+    <Capability data={data.engineering}/>
+    <CapabilityList
+      title="See more of our capabilities"
+      data={data}
+      current={'engineering'}
+    />
   </Pageshell>
 )
 
-export default SecondPage
+export default Engineering
