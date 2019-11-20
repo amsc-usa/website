@@ -9,7 +9,10 @@ import SEO from '../components/seo';
 
 const Assembly = () => (
   <Pageshell>
-    <SEO title='Assembly' />
+    <SEO
+      title='Assembly'
+      description="AMS has capabilities and resources to provide secondary operations for any mechanical parts we manufacturer."
+    />
     <Capability data={data.assembly} />
     <CapabilityList
       title="See more of our capabilities"

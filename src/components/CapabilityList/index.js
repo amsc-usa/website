@@ -12,7 +12,7 @@ const CapabilityList = ({ title, data, current }) => {
 
   return (
     <section className='ams-capability-list'>
-      <h1 className='ams-capability-list__title'>{title}</h1>
+      <h1 className='ams-capability-list__title' id="capability-list">{title}</h1>
       <ul className="ams-capability-list__list">
         {dataKeyList.map((key, i) => {
           const section = data[key][0];

@@ -42,6 +42,7 @@
 
   &__cta {
     margin-top: 64px;
+    margin-right: $gutter*2;
 
     & > span {
       padding-right: 64px;
@@ -65,39 +66,9 @@
     left: -500px;
     z-index: -1;
 
-    // @include breakpoint(546px) {
-    //   top: -30%;
-    //   right: -20%;
-    // }
-
     @include breakpoint(650px) {
       top: -400px;
-      left: -320px;
-    }
-
-    @include breakpoint(750px) {
-      // top: -25%;
-      // right: -20%;
-    }
-
-    @include breakpoint(850px) {
-      // top: -25%;
-      // right: -10%;
-    }
-
-    @include breakpoint(950px) {
-      // top: -25%;
-      // right: -15%;
-    }
-
-    @include breakpoint(1300px) {
-      // top: -25%;
-      // right: -15%;
-    }
-
-    @include breakpoint(1400px) {
-      // top: -25%;
-      // right: -15%;
+      left: -335px;
     }
   }
 }

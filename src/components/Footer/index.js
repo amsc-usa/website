@@ -18,8 +18,8 @@ const Footer = ({ siteTitle }) => (
         </h1>
         <address>
           <p>
-            <Link href="tel:770-986-0620">770-986-0620</Link> |
-            <Link href="https://www.google.com/maps/search/1627++Smith+Road+Chamblee,+GA+30341/@33.8900688,-84.3156176,13z/data=!3m1!4b1">1627  Smith Road Chamblee, GA 30341</Link>
+            <Link href="tel:512-987-9874">512-987-9874</Link> |
+            <Link href="https://goo.gl/maps/dkuWNm5Lm4YgvvHu9">1009 N. HWY 183, Liberty Hill, TX 78642</Link>
           </p>
           <p>© 2019 All rights reserved </p>
         </address>

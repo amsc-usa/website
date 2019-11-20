@@ -9,7 +9,10 @@ import SEO from "../components/seo"
 
 const ManufacturingSolutions = () => (
   <Pageshell>
-    <SEO title="Manufacturing Solutions" />
+    <SEO
+      title="Manufacturing Solutions"
+      description="AMS provides a wide range of manufacturing capabilities for mechanical parts. (e.g. Injection Molding, Compression Molding, Die Casts, Die-Cut, Metal Stamping/Forming, Extrusions, Welding/Machining, Powder Coating)"
+    />
     <Capability data={data.manufacturingSolutions}/>
     <CapabilityList
       title="See more of our capabilities"

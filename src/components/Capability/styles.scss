@@ -52,6 +52,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
 
     @include breakpoint(750px) {
       @include grid-col(5, 8);
@@ -99,12 +101,17 @@
       position: relative;
       font-size: 100%;
       box-shadow: 2em -2em 0 2em $gray-light-20;
+      padding-top: 125%;
     }
 
     img {
       object-fit: cover;
       width: 100%;
+      height: 100%;
       display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
     }
   }
 
@@ -178,6 +185,8 @@
         box-shadow: none;
         float: none;
         width: 100%;
+        padding: calc(100% * 3 / 16);
+        height: 100%;
       }
     }
   }
@@ -191,6 +200,9 @@
     }
 
     .ams-capability__overview {
+      padding-top: 0;
+      padding-bottom: 0;
+
       @include breakpoint(1000px) {
         @include grid-offset-col(2, 12);
       }
