@@ -15,7 +15,6 @@ const Starburst = () => {
 
   useEffect(() => {
     g = d3.select(starburstSVG.current)
-          .style('transform', 'rotate(-135deg)')
           .attr('width', width)
           .attr('height', height)
           .attr('viewBox', `0 0 ${height} ${width}`)
@@ -23,7 +22,7 @@ const Starburst = () => {
           .attr('transform', 'translate(' + width / 2 + ',' + height / 2 + ')');
 
     partition = d3.partition()
-                  .size([1.5 * Math.PI, radius]); // 2 * Math.PI update this for a partial circle?
+                  .size([1.4 * Math.PI, radius]); // 2 * Math.PI update this for a partial circle?
 
     root = d3.hierarchy(data)
              .sum(function (d) { return d.size});

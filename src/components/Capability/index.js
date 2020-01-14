@@ -52,7 +52,7 @@ function renderDescription (md) {
     return null;
   }
 
-  return <div dangerouslySetInnerHTML={{__html: markdown.toHTML(md) }} />;
+  return <div className="ams-capability__md" dangerouslySetInnerHTML={{__html: markdown.toHTML(md) }} />;
 }
 
 function renderCTA (cta) {

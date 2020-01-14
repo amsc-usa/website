@@ -16,14 +16,18 @@
   flex-wrap: wrap;
 
   .ams-btn {
-    margin-top: 80px;
     span {
       padding-right: 64px;
     }
   }
 
   ul {
-    margin-top: 40px;
+    margin-top: 20px;
+
+
+    @include breakpoint(650px) {
+      margin-top: 40px;
+    }
 
     li {
       padding-top: 5px;
@@ -34,6 +38,24 @@
   p {
     margin-bottom: 20px;
     margin-top: 0;
+
+    &.ams-capabilities__cta {
+      margin-bottom: 0;
+    }
+  }
+
+  &__md {
+    & + .ams-capabilities__cta {
+      margin-top: 40px;
+
+      @include breakpoint(650px) {
+        margin-top: 80px;
+      }
+    }
+
+    &:last-child p:last-child {
+      margin-bottom: 0;
+    }
   }
 
   &__title {
@@ -52,8 +74,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 64px;
+    padding-bottom: 64px;
 
     @include breakpoint(750px) {
       @include grid-col(5, 8);
@@ -65,6 +87,8 @@
       @include grid-offset-col(0, 8);
 
       padding-right: 32px;
+      padding-top: 160px;
+      padding-bottom: 160px;
     }
 
     @include breakpoint(1000px) {

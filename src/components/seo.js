@@ -43,7 +43,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           property: `og:title`,
-          content: `${title} | ${siteName}`,
+          content: title ? `${title} | ${siteName}` : siteName,
         },
         {
           property: `og:description`,
@@ -59,7 +59,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `twitter:title`,
-          content: `${title} | ${siteName}`,
+          content: title ? `${title} | ${siteName}` : siteName,
         },
         {
           name: `twitter:description`,
@@ -67,16 +67,16 @@ function SEO({ description, lang, meta, title }) {
         }
       ].concat(meta)}
     >
-    {/* <!-- Global site tag (gtag.js) - Google Analytics --> */}
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-28030649-3"></script>
-    <script>
-      {`window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+      {/* <!-- Global site tag (gtag.js) - Google Analytics --> */}
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-28030649-3"></script>
+      <script>
+        {`window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-      gtag('config', 'UA-28030649-3');`}
-    </script>
-    <script src="https://kit.fontawesome.com/292dfe8e67.js" crossorigin="anonymous"></script>
+        gtag('config', 'UA-28030649-3');`}
+      </script>
+      <script src="https://kit.fontawesome.com/292dfe8e67.js" crossorigin="anonymous"></script>
     </Helmet>
   )
 }

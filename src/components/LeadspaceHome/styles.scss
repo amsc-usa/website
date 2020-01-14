@@ -5,10 +5,11 @@
 
 .ams-leadspace-home {
   @include grid-container();
+  overflow: hidden;
 
   &__content {
     margin-top: 150px;
-    margin-bottom: 150px;
+    margin-bottom: 0;
     position: relative;
 
     @include grid-col(4, 4);
@@ -20,6 +21,7 @@
 
     @include breakpoint(750px) {
       @include grid-col(9, 12);
+      margin-bottom: 64px;
     }
 
     @include breakpoint(850px) {
@@ -42,10 +44,18 @@
 
   &__cta {
     margin-top: 64px;
-    margin-right: $gutter*2;
+    margin-right: $gutter;
 
     & > span {
-      padding-right: 64px;
+      padding-right: 40px;
+    }
+
+    @include breakpoint (550px) {
+      margin-right: $gutter*2;
+
+      & > span {
+        padding-right: 64px;
+      }
     }
   }
 

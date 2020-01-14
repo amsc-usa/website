@@ -42,6 +42,12 @@
     position: absolute;
     right: $height * .45 / 2;
     font-size: 1.2rem;
+
+    transition: right .2s ease-in-out;
+  }
+
+  &:hover i {
+    right: 5px;
   }
 
   @include set-type($type);

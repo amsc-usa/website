@@ -6,5 +6,21 @@
 .ams-starburst {
   display: block;
 
-  // animate?
+  transform: rotate(-125deg) scale(1);
+  animation: sunburstAnimation 2s 1 ease-out;
+
+  @include breakpoint (550px) {
+    animation: sunburstAnimation 1s 1 ease-out;
+  }
+}
+
+@keyframes sunburstAnimation {
+    from {
+      transform: rotate(-125deg - 180) scale(0);
+      opacity: 0;
+    }
+    to {
+      transform: rotate(-125deg) scale(1);
+      opacity: 1;
+    }
 }

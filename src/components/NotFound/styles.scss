@@ -1,0 +1,12 @@
+@import '../../globals/scss/colors';
+@import '../../globals/scss/grid';
+@import '../../globals/scss/type';
+@import '../../globals/scss/spacing';
+
+.ams-404 {
+  @include grid-container();
+
+  &__container {
+      @include grid-col(12);
+  }
+}

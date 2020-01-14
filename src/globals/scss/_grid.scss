@@ -6,8 +6,10 @@ $max-width: 1580px;
 
 @mixin grid-container () {
 
-  padding-left: $gutter / 2;
-  padding-right: $gutter / 2;
+  @include breakpoint(550px) {
+    padding-left: $gutter / 2;
+    padding-right: $gutter / 2;
+  }
   max-width: $max-width;
 
   @include clearfix;

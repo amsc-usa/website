@@ -1,14 +1,16 @@
-import React from "react"
+import React from "react";
 
-import Pageshell from "../components/Pageshell"
-import SEO from "../components/seo"
+import NotFound from '../components/NotFound';
 
-const NotFoundPage = () => (
-  <Pageshell>
-    <SEO title="404: Not found" />
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-  </Pageshell>
-)
+import Pageshell from "../components/Pageshell";
+import SEO from "../components/seo";
+
+const NotFoundPage = () => {
+  if (typeof window !== 'undefined') {
+    window.location = '/';
+  }
+
+  return <SEO title="404: Page not found" description="Sorry, but we couldn't find the page you're looking for." />;
+}
 
 export default NotFoundPage

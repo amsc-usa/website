@@ -72,7 +72,7 @@ AMS engineering team works closely with customer’s 3D files to determine the b
     }],
     "assembly": [{
       "title": "Assembly",
-      "text": `AMS has capabilities and resources to provide secondary operations for any mechanical parts we manufacturer.
+      "text": `AMS has capabilities and resources to provide secondary operations for any mechanical parts we manufacture.
 
  - Heat-Staking
  - PAD printing
@@ -131,12 +131,12 @@ AMS engineering team works closely with customer’s 3D files to determine the b
         "icon": "fa-phone-alt"
       }
     }, {
-      "title": "DFEMA (Design Failure Effects Mode Analysis)",
+      "title": "DFMEA (Design Failure Mode and Effects Analysis)",
       "text": `A very structured process that requires both the customer and AMS engineers to dissect the design for potential failure modes and design changes if needed.`,
       "image": {},
       "cta": {}
     }, {
-      "title": "PFEMA (Process Failure Effects Mode Analysis)",
+      "title": "PFMEA (Process Failure Mode and Effects Analysis)",
       "text": `If assembly is required an analysis of the process is reviewed to see if there are any possible failure modes and change the process to eliminate the failure mode.`,
       "image": {
         "src": "/images/thomas-drouault-IBUcu_9vXJc-unsplash.jpg",
@@ -198,7 +198,7 @@ AMS engineering team works closely with customer’s 3D files to determine the b
     }],
     "logistics": [{
       "title": "Logistics",
-      "text": `AMS provides our customers with total dock to dock services. Our customers can be as involved as they like or leave the whole process of getting product from China to USA.`,
+      "text": `AMS provides our customers with total dock to dock services. Our customers can be as involved as they like or let us handle the process of getting product from China to the US.`,
       "image": {
         "src": "/images/frank-mckenna-tjX_sniNzgQ-unsplash.jpg",
         "alt": "Dock to dock",
