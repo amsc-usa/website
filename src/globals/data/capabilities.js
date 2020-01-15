@@ -6,7 +6,7 @@ module.exports = {
 
 AMS engineering team works closely with customer’s 3D files to determine the best tooling strategy. AMS will study the design and offer suggestions for design changes to improve manufacturability/functionality.`,
       "image": {
-        "src": "/images/daniel-mccullough--FPFq_trr2Y-unsplash.jpg",
+        "src": "/images/eng design-1.jpg",
         "alt": "reviewing blueprints",
         "title": "",
         "description": ""
@@ -25,7 +25,7 @@ AMS engineering team works closely with customer’s 3D files to determine the b
  - Customer reviews samples and if approved gives AMS authorization to finish tooling for production.
  - Mass production begins`,
       "image": {
-        "src": "/images/ams_Business_01_05.png",
+        "src": "/images/cnc mach-tooling.jpg",
         "alt": "working with tools",
         "title": "",
         "description": ""
@@ -59,7 +59,7 @@ AMS engineering team works closely with customer’s 3D files to determine the b
  - Welding/Machining
  - Powder Coating`,
       "image": {
-        "src": "/images/spencer-davis-QTKwYmMumfk-unsplash.jpg",
+        "src": "/images/stamping-1 (004).jpg",
         "alt": "measuring on manufacturing floor",
         "title": "",
         "description": ""
@@ -69,7 +69,14 @@ AMS engineering team works closely with customer’s 3D files to determine the b
         "text": "512-987-9874",
         "icon": "fa-phone-alt"
       }
-    }],
+    }, {
+      "image": {
+        "src": "/images/Plastic Injection_DSF0164_2(002).jpg",
+        "alt": "engineering toolset",
+        "title": "",
+        "description": ""
+      }
+    }, ],
     "assembly": [{
       "title": "Assembly",
       "text": `AMS has capabilities and resources to provide secondary operations for any mechanical parts we manufacture.
@@ -89,7 +96,7 @@ AMS engineering team works closely with customer’s 3D files to determine the b
       "cta": {}
     }, {
       "image": {
-        "src": "/images/Die cut_DSF0300_assy(002).jpeg",
+        "src": "/images/Die cut_DSF0300_assy(002).jpg",
         "alt": "building things",
         "title": "",
         "description": ""
@@ -98,7 +105,12 @@ AMS engineering team works closely with customer’s 3D files to determine the b
     "engineering": [{
       "title": "Engineering",
       "text": "",
-      "image": {},
+      "image": {
+        "src": "/images/eng design-1.jpg",
+        "alt": "engineering toolset",
+        "title": "",
+        "description": ""
+      },
       "cta": {
         "href": "tel:512-987-9874",
         "text": "512-987-9874",
@@ -106,7 +118,7 @@ AMS engineering team works closely with customer’s 3D files to determine the b
       }
     }, {
       "image": {
-        "src": "/images/zmorph-multitool-3d-printer-p1m4B-lhS9Y-unsplash.jpg",
+        "src": "/images/eng-1.jpg",
         "alt": "engineering toolset",
         "title": "",
         "description": ""
@@ -255,7 +267,7 @@ AMS engineering team works closely with customer’s 3D files to determine the b
  - Supplier Audits
  - Quality/Costs/Schedule Management`,
       "image": {
-        "src": "/images/helloquence-5fNmWej4tAA-unsplash.jpg",
+        "src": "/images/supply-chain1.jpg",
         "alt": "management quality review",
         "title": "",
         "description": ""
