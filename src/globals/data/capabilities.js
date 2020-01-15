@@ -89,7 +89,7 @@ AMS engineering team works closely with customer’s 3D files to determine the b
       "cta": {}
     }, {
       "image": {
-        "src": "/images/caleb-woods--Ifr1HGFeW8-unsplash.jpg",
+        "src": "/images/Die cut_DSF0300_assy(002).jpeg",
         "alt": "building things",
         "title": "",
         "description": ""
