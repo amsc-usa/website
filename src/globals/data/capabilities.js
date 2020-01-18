@@ -2,7 +2,8 @@ module.exports = {
   "data": {
     "mechanicalDesign": [{
       "title": "Mechanical Design",
-      "text": `AMS works with your engineering team to understand the form, fit, and function of your product. A complete review of drawings and specifications are necessary to ensure the highest quality possible.
+      "text": `AMS works with your engineering team to understand the form, fit, and function of your product. 
+A complete review of drawings and specifications are necessary to ensure the highest quality possible.
 
 AMS engineering team works closely with customer’s 3D files to determine the best tooling strategy. AMS will study the design and offer suggestions for design changes to improve manufacturability/functionality.`,
       "image": {
