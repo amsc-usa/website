@@ -126,7 +126,10 @@ AMS engineering team works closely with customer’s 3D files to determine the b
     }, {
       "title": "Design For Manufacturing",
       "text": `Our engineering team will provide thorough analysis of customer’s design and provide a detailed report of any proposed changes to enhance the manufacturability of the product and provide the best cost.`,
-      "image": {},
+      "image": {
+        "src": "/images/eng-1.jpg",
+        "alt": "engineering toolset"
+      }
       "cta": {}
     }, {
       "title": "Prototyping",
