@@ -2,9 +2,9 @@ module.exports = {
   "data": {
     "mechanicalDesign": [{
       "title": "Mechanical Design",
-      "text": `AMS works with your engineering team to understand the form, fit, and function of your product. A complete review of drawings and specifications are necessary to ensure the highest quality possible.
+      "text": `AMS works with your engineering team to understand the form, fit, and function of your product. With a complete review of drawings and specifications, you are ensured the highest quality possible.
 
-AMS engineering team works closely with customer’s 3D files to determine the best tooling strategy. AMS will study the design and offer suggestions for design changes to improve manufacturability/functionality.`,
+Our engineering team works closely with your 3D files to determine the best tooling strategy. From there, AMS will study the design and offer suggestions for design changes to improve manufacturability/functionality.`,
       "image": {
         "src": "/images/eng design-1.jpg",
         "alt": "reviewing blueprints",
@@ -18,7 +18,7 @@ AMS engineering team works closely with customer’s 3D files to determine the b
       }
     }, {
       "title": "Tooling Design & Manufacturing",
-      "text": `AMS will evaluate the best tooling solution for mass production. The tooling process is a cooperative effort between AMS and the customer:
+      "text": `In order to evaluate the best tooling solution for mass production, the tooling process is a cooperative effort between AMS and the customer:
 
  - 3D file review and approval with customer
  - Tooling made to run first article samples
@@ -33,7 +33,7 @@ AMS engineering team works closely with customer’s 3D files to determine the b
       "cta": {}
     }, {
       "title": "Part Design & Manufacturing",
-      "text": `AMS engineering can take customer’s concept and create the 3D design and bring that design through all approvals and into mass production.`,
+      "text": `AMS engineers can take your concept and create the 3D design while bringing that design through all approvals and into mass production.`,
       "image": {
         "src": "/images/rob-wingate-nHRfTeqAxjs-unsplash.jpg",
         "alt": "3d printing",
