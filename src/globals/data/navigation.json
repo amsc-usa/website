@@ -1,21 +1,21 @@
 {
  "data": [{
-  "href": "/logistics",
-  "text": "Logistics"
- }, {
-  "href": "/assembly",
-  "text": "Assembly"
- }, {
-  "href": "/mechanical-design",
-  "text": "Mechanical Design"
- }, {
   "href": "/manufacturing-solutions",
   "text": "Manufacturing"
  }, {
   "href": "/engineering",
   "text": "Engineering"
  }, {
+  "href": "/mechanical-design",
+  "text": "Mechanical Design"
+ }, {
+  "href": "/assembly",
+  "text": "Assembly"
+ }, {
   "href": "/supply-chain-management",
   "text": "Supply Chain"
+ }, {
+  "href": "/logistics",
+  "text": "Logistics"
  }]
 }
