@@ -169,11 +169,11 @@ Our engineering team works closely with your 3D files to determine the best tool
       "image": {},
       "cta": {}
     }, {
-      "title": "First Article Inspection/Data Analysis",
+      "title": "(FAI) First Article Inspection Report",
       "text": `FAI is standard process that AMS uses to ensure customer is satisfied with the tooling prior to going to mass production. FAI samples are provided free of charge to the customer for their review. No production will begin until FAI’s are approved by customer.`,
       "image": {
-        "src": "/images/stephen-dawson-qwtCeJ5cLYs-unsplash.jpg",
-        "alt": "data analysis inspection",
+        "src": "/images/FAI.jpg",
+        "alt": "Report of the first article inspection.",
         "title": "",
         "description": ""
       },
@@ -181,7 +181,12 @@ Our engineering team works closely with your 3D files to determine the best tool
     }, {
       "title": "Metrology",
       "text": `AMS provides complete dimensional inspection of products manufactured using state of the art measurement equipment.`,
-      "image": {},
+      "image": {
+        "src": "/images/CMM Insp-Best.jpg",
+        "alt": "A coordinate measuring machine, a tool to make 3D measurements.",
+        "title": "",
+        "description": ""
+      },
       "cta": {}
     }, {
       // "title": "Mold Flow Analysis",
