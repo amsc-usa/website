@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[8],{"DWP/":function(e,t,a){"use strict";a.r(t);var i=a("q1tI"),n=a.n(i),r=a("xJx9"),c=a("xiEO"),l=a("e5HB"),o=a("rjNw"),s=a("vrFN");t.default=function(){return n.a.createElement(o.a,null,n.a.createElement(s.a,{title:"Logistics"}),n.a.createElement(r.a,{data:l.data.logistics}),n.a.createElement(c.a,{title:"See more of our capabilities",data:l.data,current:"logistics"}))}}}]);
+//# sourceMappingURL=component---src-pages-logistics-js-b376586f46606a640500.js.map

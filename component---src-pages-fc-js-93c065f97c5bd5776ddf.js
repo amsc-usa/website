@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[6],{kkT9:function(e,n,t){"use strict";t.r(n);var a=t("q1tI"),o=t.n(a),i=t("Wbzz"),l=t("rjNw"),w=t("vrFN");n.default=function(){return"undefined"!=typeof window&&(window.location="/"),o.a.createElement(l.a,null,o.a.createElement(w.a,{title:"Page two"}),o.a.createElement("h1",null,"Supply Chain Management"),o.a.createElement(i.Link,{to:"/"},"Go back to the homepage"))}}}]);
+//# sourceMappingURL=component---src-pages-fc-js-93c065f97c5bd5776ddf.js.map

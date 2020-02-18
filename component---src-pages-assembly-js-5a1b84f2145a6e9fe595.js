@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[4],{GC44:function(e,a,t){"use strict";t.r(a);var n=t("q1tI"),r=t.n(n),l=t("xJx9"),s=t("xiEO"),c=t("e5HB"),i=t("rjNw"),o=t("vrFN");a.default=function(){return r.a.createElement(i.a,null,r.a.createElement(o.a,{title:"Assembly"}),r.a.createElement(l.a,{data:c.data.assembly}),r.a.createElement(s.a,{title:"See more of our capabilities",data:c.data,current:"assembly"}))}}}]);
+//# sourceMappingURL=component---src-pages-assembly-js-5a1b84f2145a6e9fe595.js.map
