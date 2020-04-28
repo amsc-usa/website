@@ -19,7 +19,7 @@ const Footer = ({ siteTitle }) => (
         <address>
           <p>
             <Link href="tel:512-987-9874">512-987-9874</Link> |
-            <Link href="https://goo.gl/maps/dkuWNm5Lm4YgvvHu9">1009 N. HWY 183, Liberty Hill, TX 78642</Link>
+            <Link target="_blank" href="https://goo.gl/maps/W8ngd2CvEjYo1tE56">19600 W State Hwy 29 Liberty Hill, TX 78642</Link>
           </p>
           <p>© 2019 All rights reserved </p>
         </address>
